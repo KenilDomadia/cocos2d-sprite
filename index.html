@@ -13,17 +13,7 @@
     <canvas id="gameCanvas" width="800" height="450"></canvas>
 
     <script type="text/javascript" src="cocos2d-js-v3.13.js" charset="UTF-8"></script>
-    <script>
-        window.onload = function () {
-            cc.game.onStart = function () {
-                cc.LoaderScene.preload(Game.g_resources, function () {
-                    cc.director.runScene(new Game.scenes[1].extend());
-                }, this);
-            };
-            cc.game.run("gameCanvas");
-        }
-    </script>
-
+    <script src="src/Game.js"></script>
 </body>
 
 </html>
